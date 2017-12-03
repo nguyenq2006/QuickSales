@@ -1,0 +1,805 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		40107C851FD2801D00ACA022 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 40107C841FD2801D00ACA022 /* GoogleService-Info.plist */; };
+		40107C891FD4947500ACA022 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40107C881FD4947500ACA022 /* HomeViewController.swift */; };
+		409066771FD0EEE70011EEE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409066761FD0EEE70011EEE2 /* AppDelegate.swift */; };
+		409066791FD0EEE70011EEE2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409066781FD0EEE70011EEE2 /* LoginViewController.swift */; };
+		4090667C1FD0EEE70011EEE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4090667A1FD0EEE70011EEE2 /* Main.storyboard */; };
+		4090667E1FD0EEE70011EEE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4090667D1FD0EEE70011EEE2 /* Assets.xcassets */; };
+		409066811FD0EEE70011EEE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4090667F1FD0EEE70011EEE2 /* LaunchScreen.storyboard */; };
+		4090668C1FD0EEE70011EEE2 /* QuickSaleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4090668B1FD0EEE70011EEE2 /* QuickSaleTests.swift */; };
+		409066971FD0EEE70011EEE2 /* QuickSaleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409066961FD0EEE70011EEE2 /* QuickSaleUITests.swift */; };
+		409066A71FD1F4050011EEE2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409066A51FD1F4050011EEE2 /* LoginView.swift */; };
+		409066A81FD1F4050011EEE2 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 409066A61FD1F4050011EEE2 /* LoginView.xib */; };
+		409066AB1FD1F4330011EEE2 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409066A91FD1F4330011EEE2 /* SignupView.swift */; };
+		409066AC1FD1F4330011EEE2 /* SignupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 409066AA1FD1F4330011EEE2 /* SignupView.xib */; };
+		49917AC206CEDFA955DEEC25 /* Pods_QuickSale.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C12E38FA464C453B993F1E /* Pods_QuickSale.framework */; };
+		5284768C4CFCB3B40BBC042F /* Pods_QuickSaleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD0492B664136F9E6042E2BB /* Pods_QuickSaleUITests.framework */; };
+		8D0D59224517EA63CE8F2437 /* Pods_QuickSaleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5720C5020744F871F4BD2C6 /* Pods_QuickSaleTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		409066881FD0EEE70011EEE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4090666B1FD0EEE70011EEE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 409066721FD0EEE70011EEE2;
+			remoteInfo = QuickSale;
+		};
+		409066931FD0EEE70011EEE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4090666B1FD0EEE70011EEE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 409066721FD0EEE70011EEE2;
+			remoteInfo = QuickSale;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		22C12E38FA464C453B993F1E /* Pods_QuickSale.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickSale.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37A234AF6D030882B467481E /* Pods-QuickSaleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickSaleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickSaleTests/Pods-QuickSaleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		40107C841FD2801D00ACA022 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		40107C881FD4947500ACA022 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		409066731FD0EEE70011EEE2 /* QuickSale.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickSale.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		409066761FD0EEE70011EEE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		409066781FD0EEE70011EEE2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4090667B1FD0EEE70011EEE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4090667D1FD0EEE70011EEE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		409066801FD0EEE70011EEE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		409066821FD0EEE70011EEE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		409066871FD0EEE70011EEE2 /* QuickSaleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickSaleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4090668B1FD0EEE70011EEE2 /* QuickSaleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSaleTests.swift; sourceTree = "<group>"; };
+		4090668D1FD0EEE70011EEE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		409066921FD0EEE70011EEE2 /* QuickSaleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickSaleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		409066961FD0EEE70011EEE2 /* QuickSaleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSaleUITests.swift; sourceTree = "<group>"; };
+		409066981FD0EEE70011EEE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		409066A51FD1F4050011EEE2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		409066A61FD1F4050011EEE2 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		409066A91FD1F4330011EEE2 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		409066AA1FD1F4330011EEE2 /* SignupView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupView.xib; sourceTree = "<group>"; };
+		4E955B0F9DF96DB0A1A226FE /* Pods-QuickSaleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickSaleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickSaleUITests/Pods-QuickSaleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A1A7171D1F2F3E8992EAEB8D /* Pods-QuickSaleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickSaleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickSaleTests/Pods-QuickSaleTests.release.xcconfig"; sourceTree = "<group>"; };
+		B026E0CB817EF1C8D952FCC7 /* Pods-QuickSaleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickSaleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickSaleUITests/Pods-QuickSaleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CD0492B664136F9E6042E2BB /* Pods_QuickSaleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickSaleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1CC6AA5514F072BADC201E6 /* Pods-QuickSale.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickSale.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickSale/Pods-QuickSale.release.xcconfig"; sourceTree = "<group>"; };
+		DEF5379A913556F94491A7B9 /* Pods-QuickSale.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickSale.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickSale/Pods-QuickSale.debug.xcconfig"; sourceTree = "<group>"; };
+		F5720C5020744F871F4BD2C6 /* Pods_QuickSaleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickSaleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		409066701FD0EEE70011EEE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49917AC206CEDFA955DEEC25 /* Pods_QuickSale.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		409066841FD0EEE70011EEE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D0D59224517EA63CE8F2437 /* Pods_QuickSaleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4090668F1FD0EEE70011EEE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5284768C4CFCB3B40BBC042F /* Pods_QuickSaleUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4090666A1FD0EEE70011EEE2 = {
+			isa = PBXGroup;
+			children = (
+				409066751FD0EEE70011EEE2 /* QuickSale */,
+				4090668A1FD0EEE70011EEE2 /* QuickSaleTests */,
+				409066951FD0EEE70011EEE2 /* QuickSaleUITests */,
+				409066741FD0EEE70011EEE2 /* Products */,
+				F7A8AF5ED0506C7427A7AD35 /* Pods */,
+				DFBE0D9F951DAE369874A900 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		409066741FD0EEE70011EEE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				409066731FD0EEE70011EEE2 /* QuickSale.app */,
+				409066871FD0EEE70011EEE2 /* QuickSaleTests.xctest */,
+				409066921FD0EEE70011EEE2 /* QuickSaleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		409066751FD0EEE70011EEE2 /* QuickSale */ = {
+			isa = PBXGroup;
+			children = (
+				409066A41FD1F3A10011EEE2 /* LoginVC */,
+				409066761FD0EEE70011EEE2 /* AppDelegate.swift */,
+				4090667A1FD0EEE70011EEE2 /* Main.storyboard */,
+				40107C881FD4947500ACA022 /* HomeViewController.swift */,
+				4090667D1FD0EEE70011EEE2 /* Assets.xcassets */,
+				4090667F1FD0EEE70011EEE2 /* LaunchScreen.storyboard */,
+				409066821FD0EEE70011EEE2 /* Info.plist */,
+				40107C841FD2801D00ACA022 /* GoogleService-Info.plist */,
+			);
+			path = QuickSale;
+			sourceTree = "<group>";
+		};
+		4090668A1FD0EEE70011EEE2 /* QuickSaleTests */ = {
+			isa = PBXGroup;
+			children = (
+				4090668B1FD0EEE70011EEE2 /* QuickSaleTests.swift */,
+				4090668D1FD0EEE70011EEE2 /* Info.plist */,
+			);
+			path = QuickSaleTests;
+			sourceTree = "<group>";
+		};
+		409066951FD0EEE70011EEE2 /* QuickSaleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				409066961FD0EEE70011EEE2 /* QuickSaleUITests.swift */,
+				409066981FD0EEE70011EEE2 /* Info.plist */,
+			);
+			path = QuickSaleUITests;
+			sourceTree = "<group>";
+		};
+		409066A41FD1F3A10011EEE2 /* LoginVC */ = {
+			isa = PBXGroup;
+			children = (
+				409066781FD0EEE70011EEE2 /* LoginViewController.swift */,
+				409066A51FD1F4050011EEE2 /* LoginView.swift */,
+				409066A61FD1F4050011EEE2 /* LoginView.xib */,
+				409066A91FD1F4330011EEE2 /* SignupView.swift */,
+				409066AA1FD1F4330011EEE2 /* SignupView.xib */,
+			);
+			path = LoginVC;
+			sourceTree = "<group>";
+		};
+		DFBE0D9F951DAE369874A900 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22C12E38FA464C453B993F1E /* Pods_QuickSale.framework */,
+				F5720C5020744F871F4BD2C6 /* Pods_QuickSaleTests.framework */,
+				CD0492B664136F9E6042E2BB /* Pods_QuickSaleUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7A8AF5ED0506C7427A7AD35 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DEF5379A913556F94491A7B9 /* Pods-QuickSale.debug.xcconfig */,
+				D1CC6AA5514F072BADC201E6 /* Pods-QuickSale.release.xcconfig */,
+				37A234AF6D030882B467481E /* Pods-QuickSaleTests.debug.xcconfig */,
+				A1A7171D1F2F3E8992EAEB8D /* Pods-QuickSaleTests.release.xcconfig */,
+				4E955B0F9DF96DB0A1A226FE /* Pods-QuickSaleUITests.debug.xcconfig */,
+				B026E0CB817EF1C8D952FCC7 /* Pods-QuickSaleUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		409066721FD0EEE70011EEE2 /* QuickSale */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4090669B1FD0EEE70011EEE2 /* Build configuration list for PBXNativeTarget "QuickSale" */;
+			buildPhases = (
+				E2F0A9CD2D968A3C4B42FC9A /* [CP] Check Pods Manifest.lock */,
+				4090666F1FD0EEE70011EEE2 /* Sources */,
+				409066701FD0EEE70011EEE2 /* Frameworks */,
+				409066711FD0EEE70011EEE2 /* Resources */,
+				9AF15511A1F57FDB9F9A3349 /* [CP] Embed Pods Frameworks */,
+				F68A5DB78485B236AEF822DA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickSale;
+			productName = QuickSale;
+			productReference = 409066731FD0EEE70011EEE2 /* QuickSale.app */;
+			productType = "com.apple.product-type.application";
+		};
+		409066861FD0EEE70011EEE2 /* QuickSaleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4090669E1FD0EEE70011EEE2 /* Build configuration list for PBXNativeTarget "QuickSaleTests" */;
+			buildPhases = (
+				2A3CCC4B80AACB2122F5509A /* [CP] Check Pods Manifest.lock */,
+				409066831FD0EEE70011EEE2 /* Sources */,
+				409066841FD0EEE70011EEE2 /* Frameworks */,
+				409066851FD0EEE70011EEE2 /* Resources */,
+				CF44790BAFE4329C30006A11 /* [CP] Embed Pods Frameworks */,
+				5008D0184DC2141FCC9D2B29 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				409066891FD0EEE70011EEE2 /* PBXTargetDependency */,
+			);
+			name = QuickSaleTests;
+			productName = QuickSaleTests;
+			productReference = 409066871FD0EEE70011EEE2 /* QuickSaleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		409066911FD0EEE70011EEE2 /* QuickSaleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 409066A11FD0EEE70011EEE2 /* Build configuration list for PBXNativeTarget "QuickSaleUITests" */;
+			buildPhases = (
+				AC8092B121642E10ACF973B5 /* [CP] Check Pods Manifest.lock */,
+				4090668E1FD0EEE70011EEE2 /* Sources */,
+				4090668F1FD0EEE70011EEE2 /* Frameworks */,
+				409066901FD0EEE70011EEE2 /* Resources */,
+				27A87AFA1A815EAC211ABAEA /* [CP] Embed Pods Frameworks */,
+				37801E5F5846A77530C20650 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				409066941FD0EEE70011EEE2 /* PBXTargetDependency */,
+			);
+			name = QuickSaleUITests;
+			productName = QuickSaleUITests;
+			productReference = 409066921FD0EEE70011EEE2 /* QuickSaleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4090666B1FD0EEE70011EEE2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Quoc Nguyen";
+				TargetAttributes = {
+					409066721FD0EEE70011EEE2 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					409066861FD0EEE70011EEE2 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 409066721FD0EEE70011EEE2;
+					};
+					409066911FD0EEE70011EEE2 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 409066721FD0EEE70011EEE2;
+					};
+				};
+			};
+			buildConfigurationList = 4090666E1FD0EEE70011EEE2 /* Build configuration list for PBXProject "QuickSale" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4090666A1FD0EEE70011EEE2;
+			productRefGroup = 409066741FD0EEE70011EEE2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				409066721FD0EEE70011EEE2 /* QuickSale */,
+				409066861FD0EEE70011EEE2 /* QuickSaleTests */,
+				409066911FD0EEE70011EEE2 /* QuickSaleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		409066711FD0EEE70011EEE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				409066A81FD1F4050011EEE2 /* LoginView.xib in Resources */,
+				409066AC1FD1F4330011EEE2 /* SignupView.xib in Resources */,
+				409066811FD0EEE70011EEE2 /* LaunchScreen.storyboard in Resources */,
+				4090667E1FD0EEE70011EEE2 /* Assets.xcassets in Resources */,
+				4090667C1FD0EEE70011EEE2 /* Main.storyboard in Resources */,
+				40107C851FD2801D00ACA022 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		409066851FD0EEE70011EEE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		409066901FD0EEE70011EEE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27A87AFA1A815EAC211ABAEA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickSaleUITests/Pods-QuickSaleUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A3CCC4B80AACB2122F5509A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuickSaleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37801E5F5846A77530C20650 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickSaleUITests/Pods-QuickSaleUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5008D0184DC2141FCC9D2B29 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickSaleTests/Pods-QuickSaleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AF15511A1F57FDB9F9A3349 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-QuickSale/Pods-QuickSale-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickSale/Pods-QuickSale-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC8092B121642E10ACF973B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuickSaleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF44790BAFE4329C30006A11 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickSaleTests/Pods-QuickSaleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2F0A9CD2D968A3C4B42FC9A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuickSale-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F68A5DB78485B236AEF822DA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-QuickSale/Pods-QuickSale-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickSale/Pods-QuickSale-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4090666F1FD0EEE70011EEE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40107C891FD4947500ACA022 /* HomeViewController.swift in Sources */,
+				409066A71FD1F4050011EEE2 /* LoginView.swift in Sources */,
+				409066791FD0EEE70011EEE2 /* LoginViewController.swift in Sources */,
+				409066AB1FD1F4330011EEE2 /* SignupView.swift in Sources */,
+				409066771FD0EEE70011EEE2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		409066831FD0EEE70011EEE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4090668C1FD0EEE70011EEE2 /* QuickSaleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4090668E1FD0EEE70011EEE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				409066971FD0EEE70011EEE2 /* QuickSaleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		409066891FD0EEE70011EEE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 409066721FD0EEE70011EEE2 /* QuickSale */;
+			targetProxy = 409066881FD0EEE70011EEE2 /* PBXContainerItemProxy */;
+		};
+		409066941FD0EEE70011EEE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 409066721FD0EEE70011EEE2 /* QuickSale */;
+			targetProxy = 409066931FD0EEE70011EEE2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4090667A1FD0EEE70011EEE2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4090667B1FD0EEE70011EEE2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4090667F1FD0EEE70011EEE2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				409066801FD0EEE70011EEE2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		409066991FD0EEE70011EEE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4090669A1FD0EEE70011EEE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4090669C1FD0EEE70011EEE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEF5379A913556F94491A7B9 /* Pods-QuickSale.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QuickSale/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Quoc-Nguyen.QuickSale";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4090669D1FD0EEE70011EEE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1CC6AA5514F072BADC201E6 /* Pods-QuickSale.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QuickSale/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Quoc-Nguyen.QuickSale";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4090669F1FD0EEE70011EEE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37A234AF6D030882B467481E /* Pods-QuickSaleTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QuickSaleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Quoc-Nguyen.QuickSaleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickSale.app/QuickSale";
+			};
+			name = Debug;
+		};
+		409066A01FD0EEE70011EEE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1A7171D1F2F3E8992EAEB8D /* Pods-QuickSaleTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QuickSaleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Quoc-Nguyen.QuickSaleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickSale.app/QuickSale";
+			};
+			name = Release;
+		};
+		409066A21FD0EEE70011EEE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E955B0F9DF96DB0A1A226FE /* Pods-QuickSaleUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QuickSaleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Quoc-Nguyen.QuickSaleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QuickSale;
+			};
+			name = Debug;
+		};
+		409066A31FD0EEE70011EEE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B026E0CB817EF1C8D952FCC7 /* Pods-QuickSaleUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QuickSaleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Quoc-Nguyen.QuickSaleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QuickSale;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4090666E1FD0EEE70011EEE2 /* Build configuration list for PBXProject "QuickSale" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				409066991FD0EEE70011EEE2 /* Debug */,
+				4090669A1FD0EEE70011EEE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4090669B1FD0EEE70011EEE2 /* Build configuration list for PBXNativeTarget "QuickSale" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4090669C1FD0EEE70011EEE2 /* Debug */,
+				4090669D1FD0EEE70011EEE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4090669E1FD0EEE70011EEE2 /* Build configuration list for PBXNativeTarget "QuickSaleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4090669F1FD0EEE70011EEE2 /* Debug */,
+				409066A01FD0EEE70011EEE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		409066A11FD0EEE70011EEE2 /* Build configuration list for PBXNativeTarget "QuickSaleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				409066A21FD0EEE70011EEE2 /* Debug */,
+				409066A31FD0EEE70011EEE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4090666B1FD0EEE70011EEE2 /* Project object */;
+}

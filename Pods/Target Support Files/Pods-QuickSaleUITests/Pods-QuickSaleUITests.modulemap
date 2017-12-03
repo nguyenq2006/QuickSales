@@ -1,0 +1,6 @@
+framework module Pods_QuickSaleUITests {
+  umbrella header "Pods-QuickSaleUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
