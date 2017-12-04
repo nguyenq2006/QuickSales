@@ -11,7 +11,7 @@ import Firebase
 import GoogleSignIn
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
 
@@ -22,50 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         
         //initialize Google sso
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
-        GIDSignIn.sharedInstance().delegate = self
 
         return true
-    }
-    
-    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-        if let error = error {
-            print("Failed to log into Google  ")
-            print("\(error.localizedDescription)")
-            
-        } else {
-            
-            //authenticate user with token
-            guard let idToken = user.authentication.idToken else {return}// Safe to send to the server
-            guard let accessToken = user.authentication.accessToken else {return}
-            
-            //create google credential
-            let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: accessToken)
-            
-            // retrieve infomation on signed in user
-            let fullName = user.profile.name
-            let email = user.profile.email
-            
-            Auth.auth().signIn(with: credential, completion: {(user, error) in
-                if error != nil{
-                    print("failed to authenticate user with google")
-                    return
-                }
-                print("login successfule with user: \(user?.displayName)")
-                
-                let ref = Database.database().reference(fromURL: "https://quicksale-970e1.firebaseio.com/")
-                guard let uId = user?.uid else{return}
-                let userReference = ref.child("users").child(uId)
-                let value = ["name": fullName, "email": email]
-                userReference.updateChildValues(value, withCompletionBlock: {(error, ref) in
-                    if error != nil {
-                        print("User \(uId) cannot be updated")
-                        return
-                    }
-                    
-                    print("Saved user successful in Firebase")
-                })
-            })
-        }
     }
     
     func application(application: UIApplication,
