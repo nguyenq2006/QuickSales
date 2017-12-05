@@ -19,14 +19,17 @@ class BaseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+
         print("BaseView --- userID: \(user.uId); username \(user.uName); user email: \(user.email)")
         if let nameText = sideMenu.viewWithTag(1) as? UITextField {
             nameText.text = user.uName
+            nameText.endEditing(false)
         }
         if let emailText = sideMenu.viewWithTag(2) as? UITextField {
             emailText.adjustsFontSizeToFitWidth = true
-            emailText.minimumFontSize = 10.0
             emailText.text = user.email
+            emailText.endEditing(false)
         }
         self.sideMenu.alpha = 0
     }
@@ -49,14 +52,13 @@ class BaseViewController: UIViewController {
     
     @IBAction func signoutUser(_ sender: Any) {
         
-        do {
-            try? Auth.auth().signOut()
-            
-            if Auth.auth().currentUser == nil {
-                self.navigationController?.navigationBar.isHidden = true
-                self.performSegue(withIdentifier: "Login", sender: nil)
+        if Auth.auth().currentUser != nil {
+            do {
+                try? Auth.auth().signOut()
+                let loginVC = storyboard?.instantiateViewController(withIdentifier: "Login") as! LoginViewController
+                loginVC.modalTransitionStyle = .crossDissolve
+                present(loginVC, animated: true, completion: nil)
             }
-            
         }
     }
     

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		40107C851FD2801D00ACA022 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 40107C841FD2801D00ACA022 /* GoogleService-Info.plist */; };
+		407F87DB1FD671D7003DEF86 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407F87DA1FD671D7003DEF86 /* PostViewController.swift */; };
+		407F87DD1FD68A7C003DEF86 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 407F87DC1FD68A7B003DEF86 /* Resnet50.mlmodel */; };
 		409066771FD0EEE70011EEE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409066761FD0EEE70011EEE2 /* AppDelegate.swift */; };
 		409066791FD0EEE70011EEE2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409066781FD0EEE70011EEE2 /* LoginViewController.swift */; };
 		4090667C1FD0EEE70011EEE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4090667A1FD0EEE70011EEE2 /* Main.storyboard */; };
@@ -48,6 +50,8 @@
 		22C12E38FA464C453B993F1E /* Pods_QuickSale.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickSale.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		37A234AF6D030882B467481E /* Pods-QuickSaleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickSaleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickSaleTests/Pods-QuickSaleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		40107C841FD2801D00ACA022 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		407F87DA1FD671D7003DEF86 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		407F87DC1FD68A7B003DEF86 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
 		409066731FD0EEE70011EEE2 /* QuickSale.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickSale.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		409066761FD0EEE70011EEE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		409066781FD0EEE70011EEE2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +134,7 @@
 		409066751FD0EEE70011EEE2 /* QuickSale */ = {
 			isa = PBXGroup;
 			children = (
+				407F87DC1FD68A7B003DEF86 /* Resnet50.mlmodel */,
 				40F351D41FD4F94800C67582 /* Assets.xcassets */,
 				409066A41FD1F3A10011EEE2 /* LoginVC */,
 				409066761FD0EEE70011EEE2 /* AppDelegate.swift */,
@@ -139,6 +144,7 @@
 				4090667F1FD0EEE70011EEE2 /* LaunchScreen.storyboard */,
 				409066821FD0EEE70011EEE2 /* Info.plist */,
 				40107C841FD2801D00ACA022 /* GoogleService-Info.plist */,
+				407F87DA1FD671D7003DEF86 /* PostViewController.swift */,
 			);
 			path = QuickSale;
 			sourceTree = "<group>";
@@ -504,6 +510,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				407F87DB1FD671D7003DEF86 /* PostViewController.swift in Sources */,
+				407F87DD1FD68A7C003DEF86 /* Resnet50.mlmodel in Sources */,
 				40F351D31FD4E51D00C67582 /* UserData.swift in Sources */,
 				409066A71FD1F4050011EEE2 /* LoginView.swift in Sources */,
 				409066791FD0EEE70011EEE2 /* LoginViewController.swift in Sources */,
@@ -678,6 +686,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Y2UM2SVMR;
 				INFOPLIST_FILE = QuickSale/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Quoc-Nguyen.QuickSale";
@@ -693,6 +702,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Y2UM2SVMR;
 				INFOPLIST_FILE = QuickSale/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Quoc-Nguyen.QuickSale";

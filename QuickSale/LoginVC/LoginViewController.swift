@@ -18,33 +18,32 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
     
     override func viewDidLoad() {
         super.viewDidLoad()
-     
-        registerView = [UIView]()
+        
+        registerView = [UIView!]()
         registerView.append(LoginView().view)
         registerView.append(SignupView().view)
-
+        
         for view in registerView{
             viewContainer.addSubview(view)
         }
         
-        let dbRef = Database.database().reference()
-//        if let userID = Auth.auth().currentUser?.uid{
-//            self.goToHomePage()
-//        }else {
-        
+        if let userID = Auth.auth().currentUser?.uid{
+            self.goToHomePage()
+        }else {
+            
             //add google sign in button on login layout
             let googleBttn = GIDSignInButton()
             googleBttn.frame = CGRect(x: 93, y: 114+50, width: 138, height: 50)
             registerView[0].addSubview(googleBttn)
             
             //adding the delegates
-        GIDSignIn.sharedInstance().uiDelegate = self as GIDSignInUIDelegate
+            GIDSignIn.sharedInstance().uiDelegate = self as GIDSignInUIDelegate
             GIDSignIn.sharedInstance().delegate = self
             viewContainer.bringSubview(toFront: registerView[0])
-//        }
+        }
         
     }
-
+    
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         if let error = error {
             print("Failed to log into Google  ")
@@ -91,7 +90,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
         let selection = sender.selectedSegmentIndex
         viewContainer.bringSubview(toFront: registerView[selection])
     }
-
+    
     @IBAction func signupAction(_ sender: Any) {
         print("signing up user")
         var password:String?
@@ -113,7 +112,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
             print(password!)
         }
         
-
+        
         Auth.auth().createUser(withEmail: email!, password: password!, completion: {(user: User?, error) in
             if error != nil {
                 print(error)
@@ -156,9 +155,10 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
         Auth.auth().signIn(withEmail: email!, password: password!, completion: {(user, error) in
             if error != nil{
                 print(error)
+            }else{
+                print("login successful")
+                self.goToHomePage()
             }
-            print("login successful")
-            self.goToHomePage()
         })
         
         
@@ -185,21 +185,21 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
         
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "HomePage"{
-//            
-//            if let homePage = segue.destination as? BaseViewController{
-//                if let userInfo = sender as? UserData.User{
-//                    homePage.uId = userInfo.uId
-//                    homePage.uName = userInfo.uName
-//                    homePage.email = userInfo.email
-//                }
-//            } else {
-//                print(segue)
-//            }
-//        }
-//    }
+    //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    //        if segue.identifier == "HomePage"{
+    //
+    //            if let homePage = segue.destination as? BaseViewController{
+    //                if let userInfo = sender as? UserData.User{
+    //                    homePage.uId = userInfo.uId
+    //                    homePage.uName = userInfo.uName
+    //                    homePage.email = userInfo.email
+    //                }
+    //            } else {
+    //                print(segue)
+    //            }
+    //        }
+    //    }
     
-
+    
 }
 
