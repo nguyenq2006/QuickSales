@@ -11,24 +11,22 @@ import Firebase
 
 class BaseViewController: UIViewController {
     
-    var user = LoginViewController.user
-    
     var isHidden = true
     
     @IBOutlet weak var sideMenu: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
-
-        print("BaseView --- userID: \(user.uId); username \(user.uName); user email: \(user.email)")
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        
+        print("BaseView --- userID: \(AppUser.uId); username \(AppUser.uName); user email: \(AppUser.email)")
         if let nameText = sideMenu.viewWithTag(1) as? UITextField {
-            nameText.text = user.uName
+            nameText.text = AppUser.uName
             nameText.endEditing(false)
         }
         if let emailText = sideMenu.viewWithTag(2) as? UITextField {
             emailText.adjustsFontSizeToFitWidth = true
-            emailText.text = user.email
+            emailText.text = AppUser.email
             emailText.endEditing(false)
         }
         self.sideMenu.alpha = 0

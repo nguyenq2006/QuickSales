@@ -14,7 +14,6 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
     
     @IBOutlet weak var viewContainer: UIView!
     var registerView: [(UIView)] = []
-    static var user:UserData.User = UserData.User()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,20 +29,17 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
         if let userID = Auth.auth().currentUser?.uid{
             self.goToHomePage()
         }else {
-            
-            //add google sign in button on login layout
-            let googleBttn = GIDSignInButton()
-            googleBttn.frame = CGRect(x: 93, y: 114+50, width: 138, height: 50)
-            registerView[0].addSubview(googleBttn)
-            
             //adding the delegates
             GIDSignIn.sharedInstance().uiDelegate = self as GIDSignInUIDelegate
             GIDSignIn.sharedInstance().delegate = self
             viewContainer.bringSubview(toFront: registerView[0])
+            
         }
-        
     }
     
+    @IBAction func googleLogin(_ sender: Any) {
+        GIDSignIn.sharedInstance().signIn()
+    }
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         if let error = error {
             print("Failed to log into Google  ")
@@ -176,7 +172,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
             let email = value?["email"] as? String ?? ""
             print("userID: \(userID); username: \(username); user email: \(email)")
             
-            LoginViewController.user = UserData.User(uId: userID!, uName: username, email: email)
+            let  _ = AppUser(uId: userID!, uName: username, email: email)
             self.performSegue(withIdentifier: "HomePage", sender: nil)
             
         }) { (error) in

@@ -21,20 +21,15 @@
             <subviews>
                 <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="dPh-Oy-aPO">
                     <rect key="frame" x="0.0" y="20" width="343" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="343" id="BzI-8g-OSL"/>
-                        <constraint firstAttribute="height" constant="30" id="P5I-n1-Gcb"/>
-                    </constraints>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iYZ-eG-zfR" colorLabel="IBBuiltInLabel-Yellow">
-                    <rect key="frame" x="97" y="114" width="130" height="45"/>
+                    <rect key="frame" x="97" y="123" width="130" height="45"/>
                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="130" id="e99-6C-1XN"/>
-                        <constraint firstAttribute="height" constant="45" id="v0r-4N-S9t"/>
+                        <constraint firstAttribute="height" constant="45" id="UyW-mv-Sgp"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                     <state key="normal" title="Login">
@@ -46,27 +41,43 @@
                 </button>
                 <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="GRx-TY-5I3" userLabel="password">
                     <rect key="frame" x="0.0" y="58" width="343" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="343" id="U6m-oQ-gj0"/>
-                        <constraint firstAttribute="height" constant="30" id="snd-GL-Qzj"/>
-                    </constraints>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                 </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AUn-8k-Nkb" colorLabel="IBBuiltInLabel-Yellow">
+                    <rect key="frame" x="97" y="176" width="130" height="45"/>
+                    <color key="backgroundColor" red="0.88547740544679865" green="0.63821162009193766" blue="0.15243089955393754" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                    <state key="normal" title="Google Login">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="googleLogin:" destination="-1" eventType="touchUpInside" id="5pi-Vu-OtI"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-google-25" translatesAutoresizingMaskIntoConstraints="NO" id="GSa-TY-WWc">
+                    <rect key="frame" x="103" y="186" width="25" height="25"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="0.087480291530000004" green="0.4841495542" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dPh-Oy-aPO" secondAttribute="trailing" constant="32" id="6Jz-tF-if1"/>
-                <constraint firstItem="iYZ-eG-zfR" firstAttribute="top" secondItem="GRx-TY-5I3" secondAttribute="bottom" constant="26" id="6Uk-2h-iUn"/>
-                <constraint firstItem="GRx-TY-5I3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="8Op-rf-hyV"/>
-                <constraint firstItem="iYZ-eG-zfR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="97" id="H3J-Bq-vw7"/>
-                <constraint firstItem="GRx-TY-5I3" firstAttribute="top" secondItem="dPh-Oy-aPO" secondAttribute="bottom" constant="8" id="W9Z-1d-0Tq"/>
-                <constraint firstItem="iYZ-eG-zfR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="97" id="Yl8-5M-0Uy"/>
-                <constraint firstItem="dPh-Oy-aPO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="aTu-Dv-RdD"/>
-                <constraint firstItem="iYZ-eG-zfR" firstAttribute="top" secondItem="GRx-TY-5I3" secondAttribute="bottom" constant="26" id="gWv-Wq-NJP"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GRx-TY-5I3" secondAttribute="trailing" constant="32" id="maC-Hp-jQB"/>
-                <constraint firstItem="dPh-Oy-aPO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="uIJ-8i-68a"/>
+                <constraint firstItem="iYZ-eG-zfR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="97" id="0u0-df-pwy"/>
+                <constraint firstItem="GSa-TY-WWc" firstAttribute="top" secondItem="iYZ-eG-zfR" secondAttribute="bottom" constant="18" id="66d-Ga-O2y"/>
+                <constraint firstItem="AUn-8k-Nkb" firstAttribute="top" secondItem="iYZ-eG-zfR" secondAttribute="bottom" constant="8" symbolic="YES" id="71a-Hk-a9V"/>
+                <constraint firstItem="GRx-TY-5I3" firstAttribute="top" secondItem="dPh-Oy-aPO" secondAttribute="bottom" constant="8" symbolic="YES" id="Fcz-hA-H6a"/>
+                <constraint firstItem="dPh-Oy-aPO" firstAttribute="trailing" secondItem="GRx-TY-5I3" secondAttribute="trailing" id="Gh1-6j-CGG"/>
+                <constraint firstItem="AUn-8k-Nkb" firstAttribute="centerY" secondItem="GSa-TY-WWc" secondAttribute="centerY" id="Hy2-VP-fiL"/>
+                <constraint firstItem="GSa-TY-WWc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="103" id="N7l-yX-cOq"/>
+                <constraint firstItem="iYZ-eG-zfR" firstAttribute="trailing" secondItem="AUn-8k-Nkb" secondAttribute="trailing" id="P7x-2o-vCI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dPh-Oy-aPO" secondAttribute="trailing" constant="32" id="Poh-YV-M2J"/>
+                <constraint firstItem="iYZ-eG-zfR" firstAttribute="top" secondItem="GRx-TY-5I3" secondAttribute="bottom" constant="35" id="Tq5-IG-MtP"/>
+                <constraint firstItem="dPh-Oy-aPO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="XVz-oZ-hfq"/>
+                <constraint firstItem="dPh-Oy-aPO" firstAttribute="leading" secondItem="GRx-TY-5I3" secondAttribute="leading" id="be7-lx-Jgl"/>
+                <constraint firstItem="iYZ-eG-zfR" firstAttribute="leading" secondItem="AUn-8k-Nkb" secondAttribute="leading" id="hLG-8i-4fr"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iYZ-eG-zfR" secondAttribute="trailing" constant="148" id="tUV-ub-bux"/>
+                <constraint firstItem="dPh-Oy-aPO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zge-AJ-2hj"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="34.5" y="54.5"/>
@@ -79,4 +90,7 @@
             <nil key="highlightedColor"/>
         </label>
     </objects>
+    <resources>
+        <image name="icons8-google-25" width="25" height="25"/>
+    </resources>
 </document>

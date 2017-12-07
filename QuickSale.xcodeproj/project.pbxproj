@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		40107C851FD2801D00ACA022 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 40107C841FD2801D00ACA022 /* GoogleService-Info.plist */; };
+		4043A7A71FD8172B00DA7484 /* ListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4043A7A61FD8172B00DA7484 /* ListingViewController.swift */; };
+		4043A7A91FD91C8800DA7484 /* TableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4043A7A81FD91C8800DA7484 /* TableCellView.swift */; };
 		407F87DB1FD671D7003DEF86 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407F87DA1FD671D7003DEF86 /* PostViewController.swift */; };
 		407F87DD1FD68A7C003DEF86 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 407F87DC1FD68A7B003DEF86 /* Resnet50.mlmodel */; };
+		407F87DF1FD7FE53003DEF86 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407F87DE1FD7FE53003DEF86 /* MapViewController.swift */; };
 		409066771FD0EEE70011EEE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409066761FD0EEE70011EEE2 /* AppDelegate.swift */; };
 		409066791FD0EEE70011EEE2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409066781FD0EEE70011EEE2 /* LoginViewController.swift */; };
 		4090667C1FD0EEE70011EEE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4090667A1FD0EEE70011EEE2 /* Main.storyboard */; };
@@ -21,8 +24,7 @@
 		409066AB1FD1F4330011EEE2 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409066A91FD1F4330011EEE2 /* SignupView.swift */; };
 		409066AC1FD1F4330011EEE2 /* SignupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 409066AA1FD1F4330011EEE2 /* SignupView.xib */; };
 		40A586B91FD50A4500B4581C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A586B81FD50A4500B4581C /* BaseViewController.swift */; };
-		40F351D11FD4E4B600C67582 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F351D01FD4E4B600C67582 /* HomeTabBarController.swift */; };
-		40F351D31FD4E51D00C67582 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F351D21FD4E51D00C67582 /* UserData.swift */; };
+		40F351D31FD4E51D00C67582 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F351D21FD4E51D00C67582 /* AppData.swift */; };
 		40F351D51FD4F94800C67582 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40F351D41FD4F94800C67582 /* Assets.xcassets */; };
 		49917AC206CEDFA955DEEC25 /* Pods_QuickSale.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C12E38FA464C453B993F1E /* Pods_QuickSale.framework */; };
 		5284768C4CFCB3B40BBC042F /* Pods_QuickSaleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD0492B664136F9E6042E2BB /* Pods_QuickSaleUITests.framework */; };
@@ -50,8 +52,11 @@
 		22C12E38FA464C453B993F1E /* Pods_QuickSale.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickSale.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		37A234AF6D030882B467481E /* Pods-QuickSaleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickSaleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickSaleTests/Pods-QuickSaleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		40107C841FD2801D00ACA022 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4043A7A61FD8172B00DA7484 /* ListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewController.swift; sourceTree = "<group>"; };
+		4043A7A81FD91C8800DA7484 /* TableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellView.swift; sourceTree = "<group>"; };
 		407F87DA1FD671D7003DEF86 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		407F87DC1FD68A7B003DEF86 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
+		407F87DE1FD7FE53003DEF86 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		409066731FD0EEE70011EEE2 /* QuickSale.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickSale.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		409066761FD0EEE70011EEE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		409066781FD0EEE70011EEE2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -69,8 +74,7 @@
 		409066A91FD1F4330011EEE2 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		409066AA1FD1F4330011EEE2 /* SignupView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupView.xib; sourceTree = "<group>"; };
 		40A586B81FD50A4500B4581C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		40F351D01FD4E4B600C67582 /* HomeTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeTabBarController.swift; path = ../../../Desktop/QuickSale/HomeTabBarController.swift; sourceTree = "<group>"; };
-		40F351D21FD4E51D00C67582 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		40F351D21FD4E51D00C67582 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		40F351D41FD4F94800C67582 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Desktop/QuickSale/Assets.xcassets; sourceTree = "<group>"; };
 		4E955B0F9DF96DB0A1A226FE /* Pods-QuickSaleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickSaleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickSaleUITests/Pods-QuickSaleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A1A7171D1F2F3E8992EAEB8D /* Pods-QuickSaleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickSaleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickSaleTests/Pods-QuickSaleTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -139,12 +143,14 @@
 				409066A41FD1F3A10011EEE2 /* LoginVC */,
 				409066761FD0EEE70011EEE2 /* AppDelegate.swift */,
 				4090667A1FD0EEE70011EEE2 /* Main.storyboard */,
-				40F351D01FD4E4B600C67582 /* HomeTabBarController.swift */,
 				40A586B81FD50A4500B4581C /* BaseViewController.swift */,
 				4090667F1FD0EEE70011EEE2 /* LaunchScreen.storyboard */,
 				409066821FD0EEE70011EEE2 /* Info.plist */,
 				40107C841FD2801D00ACA022 /* GoogleService-Info.plist */,
 				407F87DA1FD671D7003DEF86 /* PostViewController.swift */,
+				407F87DE1FD7FE53003DEF86 /* MapViewController.swift */,
+				4043A7A61FD8172B00DA7484 /* ListingViewController.swift */,
+				4043A7A81FD91C8800DA7484 /* TableCellView.swift */,
 			);
 			path = QuickSale;
 			sourceTree = "<group>";
@@ -175,7 +181,7 @@
 				409066A61FD1F4050011EEE2 /* LoginView.xib */,
 				409066A91FD1F4330011EEE2 /* SignupView.swift */,
 				409066AA1FD1F4330011EEE2 /* SignupView.xib */,
-				40F351D21FD4E51D00C67582 /* UserData.swift */,
+				40F351D21FD4E51D00C67582 /* AppData.swift */,
 			);
 			path = LoginVC;
 			sourceTree = "<group>";
@@ -512,13 +518,15 @@
 			files = (
 				407F87DB1FD671D7003DEF86 /* PostViewController.swift in Sources */,
 				407F87DD1FD68A7C003DEF86 /* Resnet50.mlmodel in Sources */,
-				40F351D31FD4E51D00C67582 /* UserData.swift in Sources */,
+				40F351D31FD4E51D00C67582 /* AppData.swift in Sources */,
 				409066A71FD1F4050011EEE2 /* LoginView.swift in Sources */,
+				407F87DF1FD7FE53003DEF86 /* MapViewController.swift in Sources */,
+				4043A7A91FD91C8800DA7484 /* TableCellView.swift in Sources */,
 				409066791FD0EEE70011EEE2 /* LoginViewController.swift in Sources */,
 				409066AB1FD1F4330011EEE2 /* SignupView.swift in Sources */,
 				40A586B91FD50A4500B4581C /* BaseViewController.swift in Sources */,
-				40F351D11FD4E4B600C67582 /* HomeTabBarController.swift in Sources */,
 				409066771FD0EEE70011EEE2 /* AppDelegate.swift in Sources */,
+				4043A7A71FD8172B00DA7484 /* ListingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

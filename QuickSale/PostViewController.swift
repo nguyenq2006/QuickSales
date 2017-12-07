@@ -9,6 +9,7 @@
 import UIKit
 import CoreML
 import Vision
+import Firebase
 
 class PostViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITextFieldDelegate, UITextViewDelegate {
 
@@ -108,6 +109,41 @@ class PostViewController: UIViewController, UINavigationControllerDelegate, UIIm
     }
     
     @IBAction func postAction(_ sender: Any) {
+        let dbRef = Database.database().reference(fromURL: "https://quicksale-970e1.firebaseio.com/")
+        
+        var data = NSData()
+        data = UIImageJPEGRepresentation(itemImage.image!, 0.8)! as NSData
+        let dataFormat = DateFormatter()
+        dataFormat.dateFormat = "MM_DD_yy_h_mm"
+        let imageName = "\(AppUser.uId)_\(dataFormat.string(from:NSDate() as Date))"
+        let imagePath = "PostImages/\(imageName).jpg"
+        let storageRef = Storage.storage().reference(forURL: "gs://quicksale-970e1.appspot.com/")
+        let childUserImages = storageRef.child(imagePath)
+        let metaData = StorageMetadata()
+        metaData.contentType = "image/jpeg"
+        //upload image
+        childUserImages.putData(data as Data, metadata: metaData)
+        
+        //getting the location
+        let currentLocation = MapViewController.locationManager.location
+        let itemLat = currentLocation?.coordinate.latitude
+        let itemLong = currentLocation?.coordinate.longitude
+
+        if let iName = iNameFeild.text, let iPrice = priceFeild.text, var iDescription = descriptionFeild.text as String?{
+            var postInfo = ["uID": AppUser.uId,
+                            "itemName": iName,
+                            "itemPrice": iPrice,
+                            "itemDescription": iDescription,
+                            "itemImage": imagePath,
+                            "date": ServerValue.timestamp(),
+                            "itemLat": itemLat,
+                            "itemLong": itemLong] as [String:Any]
+            
+            //adding the post to firebase db
+            dbRef.child("Posts").childByAutoId().setValue(postInfo)
+            cancelAction(sender)
+        }
+       
         
     }
     
