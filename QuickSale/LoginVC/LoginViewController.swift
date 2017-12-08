@@ -10,7 +10,9 @@ import UIKit
 import Firebase
 import GoogleSignIn
 
+
 class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate{
+    
     
     @IBOutlet weak var viewContainer: UIView!
     var registerView: [(UIView)] = []
@@ -40,6 +42,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
     @IBAction func googleLogin(_ sender: Any) {
         GIDSignIn.sharedInstance().signIn()
     }
+    
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         if let error = error {
             print("Failed to log into Google  ")
@@ -155,6 +158,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
                 print("login successful")
                 self.goToHomePage()
             }
+            
         })
         
         
@@ -181,20 +185,8 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
         
     }
     
-    //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    //        if segue.identifier == "HomePage"{
-    //
-    //            if let homePage = segue.destination as? BaseViewController{
-    //                if let userInfo = sender as? UserData.User{
-    //                    homePage.uId = userInfo.uId
-    //                    homePage.uName = userInfo.uName
-    //                    homePage.email = userInfo.email
-    //                }
-    //            } else {
-    //                print(segue)
-    //            }
-    //        }
-    //    }
+ 
+    
     
     
 }
