@@ -14,15 +14,17 @@ import MapKit
 class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     static var locationManager:CLLocationManager = CLLocationManager()
+    static var markers = [MKPointAnnotation]()
     
     @IBOutlet weak var mapView: MKMapView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-      
+        
         MapViewController.locationManager.delegate = self
         MapViewController.locationManager.desiredAccuracy = kCLLocationAccuracyBest
         MapViewController.locationManager.requestWhenInUseAuthorization()
-        mapView.showsUserLocation = true
+        self.mapView.showsUserLocation = true
         
         
         if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
@@ -40,6 +42,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
             mapZoomIn()
         }
+        addItemToMap()
     }
     
     func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
@@ -60,6 +63,13 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         let current = MapViewController.locationManager.location
         let noLocation = CLLocationCoordinate2D(latitude: (current?.coordinate.latitude)!, longitude: (current?.coordinate.longitude)!)
         let viewRegion = MKCoordinateRegionMakeWithDistance(noLocation, 12000, 12000)
-        mapView.setRegion(viewRegion, animated: true)
+        self.mapView.setRegion(viewRegion, animated: true)
     }
+    
+    func addItemToMap(){
+        for marker in MapViewController.markers{
+           self.mapView.addAnnotation(marker)
+        }
+    }
+    
 }

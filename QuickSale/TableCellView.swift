@@ -11,6 +11,7 @@ import Firebase
 
 class TableCellView: UITableViewCell {
     var ref = DatabaseReference.init()
+
     
     //table cell view
     @IBOutlet weak var txtUserName: UILabel!
@@ -26,7 +27,6 @@ class TableCellView: UITableViewCell {
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        
         // Configure the view for the selected state
     }
     
@@ -38,7 +38,9 @@ class TableCellView: UITableViewCell {
         self.txtDescription.text = item.iDescription!
         self.setPostImage(url: item.imagePath!)
         self.txtDate.text = item.postDate!
+        
     }
+    
     func getUserName(uID: String) {
         var ref = Database.database().reference()
         ref.child("users").child(uID).observe(.value, with: {

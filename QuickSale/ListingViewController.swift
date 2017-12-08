@@ -8,9 +8,10 @@
 
 import UIKit
 import Firebase
+import MapKit
 
 class ListingViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
+    
     @IBOutlet weak var listView: UITableView!
     
     var listOfPosts = [SellingItem]()
@@ -18,12 +19,12 @@ class ListingViewController: UIViewController, UITableViewDataSource, UITableVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         listView.dataSource = self
         listView.delegate = self
         loadPostFromFirebase()
     }
-
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -35,12 +36,23 @@ class ListingViewController: UIViewController, UITableViewDataSource, UITableVie
         let post = listOfPosts[indexPath.row]
         let postView = tableView.dequeueReusableCell(withIdentifier: "postCell", for: indexPath) as! TableCellView
         postView.setText(item: post)
+        
+        //adding map marker
+        let lat = Double(post.iLat!)
+        let long = Double(post.iLong!)
+        
+        let marker = MKPointAnnotation()
+        marker.coordinate = CLLocationCoordinate2D(latitude: lat!, longitude: long!)
+        marker.title = post.iName
+        marker.subtitle = post.iPrice
+        MapViewController.markers.append(marker)
+        
         return postView
     }
     
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return 1000
-//    }
+    //    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    //        return 1000
+    //    }
     
     func loadPostFromFirebase(){
         self.ref.child("Posts").queryOrdered(byChild: "date").observe(.value, with: {
