@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "QuickSale/ListingViewController.swift"
-            timestampString = "534483747.204106"
+            timestampString = "534484112.622665"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "40"
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "QuickSale/ListingViewController.swift"
-            timestampString = "534483747.204631"
+            timestampString = "534484112.623203"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "124"
-            endingLineNumber = "124"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
             landmarkName = "loadPostFromFirebase()"
             landmarkType = "7">
          </BreakpointContent>

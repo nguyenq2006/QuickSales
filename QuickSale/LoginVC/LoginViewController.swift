@@ -37,7 +37,16 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
             viewContainer.bringSubview(toFront: registerView[0])
             
         }
+        
+        let dimissKeyboardGesture: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(PostViewController.dismissKeyboard))
+        view.addGestureRecognizer(dimissKeyboardGesture)
     }
+    
+    //dismiss keyboard when touch outside
+    @objc func dismissKeyboard(){
+        view.endEditing(true)
+    }
+    
     
     @IBAction func googleLogin(_ sender: Any) {
         GIDSignIn.sharedInstance().signIn()
