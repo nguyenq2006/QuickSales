@@ -8,10 +8,11 @@
 
 import UIKit
 import Firebase
+import CoreData
 
 class TableCellView: UITableViewCell {
     var ref = DatabaseReference.init()
-
+    
     
     //table cell view
     @IBOutlet weak var txtUserName: UILabel!
@@ -30,14 +31,23 @@ class TableCellView: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setText(item: SellingItem){
+    func setText(itemData: Any){
         //initialize the text
-        self.getUserName(uID: item.uId!)
-        self.txtItemName.text = item.iName!
-        self.txtPrice.text = item.iPrice!
-        self.txtDescription.text = item.iDescription!
-        self.setPostImage(url: item.imagePath!)
-        self.txtDate.text = item.postDate!
+        if let item = itemData as? SellingItem{
+            self.getUserName(uID: item.uId!)
+            self.txtItemName.text = item.iName!
+            self.txtPrice.text = item.iPrice!
+            self.txtDescription.text = item.iDescription!
+            self.setPostImage(url: item.imagePath!)
+            self.txtDate.text = item.postDate!
+        } else if let item = itemData as? NSManagedObject {
+            self.getUserName(uID: item.value(forKey: "sellerID") as! String)
+            self.txtItemName.text = item.value(forKey: "itemName") as! String
+            self.txtPrice.text = item.value(forKey: "itemPrice") as! String
+            self.txtDescription.text = item.value(forKey: "itemDescription") as! String
+            self.setPostImage(url: item.value(forKey: "imagePath") as! String)
+            self.txtDate.text = item.value(forKey: "date") as! String
+        }
         
     }
     
@@ -79,6 +89,6 @@ class TableCellView: UITableViewCell {
             
         })
     }
-  
-
+    
+    
 }

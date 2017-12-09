@@ -15,6 +15,8 @@
 		407F87DB1FD671D7003DEF86 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407F87DA1FD671D7003DEF86 /* PostViewController.swift */; };
 		407F87DD1FD68A7C003DEF86 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 407F87DC1FD68A7B003DEF86 /* Resnet50.mlmodel */; };
 		407F87DF1FD7FE53003DEF86 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407F87DE1FD7FE53003DEF86 /* MapViewController.swift */; };
+		408F366B1FDB34090014B3BB /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 408F36691FDB34090014B3BB /* CoreData.xcdatamodeld */; };
+		408F366D1FDB38070014B3BB /* BookmarkListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408F366C1FDB38070014B3BB /* BookmarkListTableViewController.swift */; };
 		409066771FD0EEE70011EEE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409066761FD0EEE70011EEE2 /* AppDelegate.swift */; };
 		409066791FD0EEE70011EEE2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409066781FD0EEE70011EEE2 /* LoginViewController.swift */; };
 		4090667C1FD0EEE70011EEE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4090667A1FD0EEE70011EEE2 /* Main.storyboard */; };
@@ -59,6 +61,8 @@
 		407F87DA1FD671D7003DEF86 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		407F87DC1FD68A7B003DEF86 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
 		407F87DE1FD7FE53003DEF86 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		408F366A1FDB34090014B3BB /* BookmarkPost.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BookmarkPost.xcdatamodel; sourceTree = "<group>"; };
+		408F366C1FDB38070014B3BB /* BookmarkListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkListTableViewController.swift; sourceTree = "<group>"; };
 		409066731FD0EEE70011EEE2 /* QuickSale.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickSale.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		409066761FD0EEE70011EEE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		409066781FD0EEE70011EEE2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +155,8 @@
 				407F87DE1FD7FE53003DEF86 /* MapViewController.swift */,
 				4043A7A61FD8172B00DA7484 /* ListingViewController.swift */,
 				4043A7A81FD91C8800DA7484 /* TableCellView.swift */,
+				408F36691FDB34090014B3BB /* CoreData.xcdatamodeld */,
+				408F366C1FDB38070014B3BB /* BookmarkListTableViewController.swift */,
 			);
 			path = QuickSale;
 			sourceTree = "<group>";
@@ -517,10 +523,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				407F87DB1FD671D7003DEF86 /* PostViewController.swift in Sources */,
+				408F366D1FDB38070014B3BB /* BookmarkListTableViewController.swift in Sources */,
 				407F87DD1FD68A7C003DEF86 /* Resnet50.mlmodel in Sources */,
 				40F351D31FD4E51D00C67582 /* AppData.swift in Sources */,
 				409066A71FD1F4050011EEE2 /* LoginView.swift in Sources */,
 				407F87DF1FD7FE53003DEF86 /* MapViewController.swift in Sources */,
+				408F366B1FDB34090014B3BB /* CoreData.xcdatamodeld in Sources */,
 				4043A7A91FD91C8800DA7484 /* TableCellView.swift in Sources */,
 				409066791FD0EEE70011EEE2 /* LoginViewController.swift in Sources */,
 				409066AB1FD1F4330011EEE2 /* SignupView.swift in Sources */,
@@ -826,6 +834,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		408F36691FDB34090014B3BB /* CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				408F366A1FDB34090014B3BB /* BookmarkPost.xcdatamodel */,
+			);
+			currentVersion = 408F366A1FDB34090014B3BB /* BookmarkPost.xcdatamodel */;
+			path = CoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4090666B1FD0EEE70011EEE2 /* Project object */;
 }

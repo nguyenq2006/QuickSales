@@ -21,6 +21,7 @@ struct AppUser {
 }
 
 class SellingItem {
+    var postID:String?
     var uId:String?
     var iName:String?
     var iPrice:String?
@@ -30,8 +31,9 @@ class SellingItem {
     var iLat:String?
     var iLong:String?
     
-    init(uId: String, iName: String, iPrice: String, iDescription: String,
+    init(postID: String, uId: String, iName: String, iPrice: String, iDescription: String,
          imagePath: String, postDate: String, iLat: String, iLong: String) {
+        self.postID = postID
         self.uId = uId
         self.iName = iName
         self.iPrice = iPrice
